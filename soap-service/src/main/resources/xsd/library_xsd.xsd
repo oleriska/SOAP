@@ -1,0 +1,79 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+
+  <xs:element name="getLibraryByNameRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getLibraryByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="library" type="tns:Library"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getLibrariesByBookRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="book" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getLibrariesByBookResponse">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="library" type="tns:Library"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--  ======================================================================================================== -->
+
+  <xs:complexType name="Library">
+    <xs:sequence>
+      <xs:element name="Library_Name" type="xs:string"/>
+      <xs:element name="Books" type="tns:Books"/>
+      <xs:element name="Loans" type="tns:Loans"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Library_Book">
+    <xs:sequence>
+      <xs:element name="Book_ID" type="xs:int" />
+      <xs:element name="Book_Author_ID" type="xs:int" />
+      <xs:element name="Book_Title" type="xs:string" />
+      <xs:element name="Book_Edition" type="xs:int" />
+      <xs:element name="Book_Release_Date" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Books">
+    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Library_Book" type="tns:Library_Book"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Library_Loan">
+    <xs:sequence>
+      <xs:element name="Loan_ID" type="xs:int" />
+      <xs:element name="Loan_Student_ID" type="xs:int" />
+      <xs:element name="Loan_Book_ID" type="xs:int" />
+      <xs:element name="Loan_From" type="xs:date" />
+      <xs:element name="Loan_To" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Loans">
+    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Library_Loan" type="tns:Library_Loan"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="library" type="tns:Library"/>
+</xs:schema>

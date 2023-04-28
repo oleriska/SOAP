@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/library-to-PDF.xsl"?>
+<Library>
+    <Library_Name>The British Library</Library_Name>
+    <Books>
+        <Library_Book>
+            <Book_ID>1</Book_ID>
+            <Book_Author_ID>3</Book_Author_ID>
+            <Book_Title>Jane Eyre</Book_Title>
+            <Book_Edition>1</Book_Edition>
+            <Book_Release_Date>2008-02-18</Book_Release_Date>
+        </Library_Book>
+        <Library_Book>
+            <Book_ID>2</Book_ID>
+            <Book_Author_ID>102</Book_Author_ID>
+            <Book_Title>Sense and Sensibility</Book_Title>
+            <Book_Edition>3</Book_Edition>
+            <Book_Release_Date>2009-07-06</Book_Release_Date>
+        </Library_Book>
+        <Library_Book>
+            <Book_ID>3</Book_ID>
+            <Book_Author_ID>96</Book_Author_ID>
+            <Book_Title>The Picture of Dorian Gray</Book_Title>
+            <Book_Edition>3</Book_Edition>
+            <Book_Release_Date>2019-03-31</Book_Release_Date>
+        </Library_Book>
+        <Library_Book>
+            <Book_ID>4</Book_ID>
+            <Book_Author_ID>44</Book_Author_ID>
+            <Book_Title>Wuthering Heights</Book_Title>
+            <Book_Edition>1</Book_Edition>
+            <Book_Release_Date>2009-05-22</Book_Release_Date>
+        </Library_Book>
+        <Library_Book>
+            <Book_ID>5</Book_ID>
+            <Book_Author_ID>85</Book_Author_ID>
+            <Book_Title>Emma</Book_Title>
+            <Book_Edition>4</Book_Edition>
+            <Book_Release_Date>2016-07-15</Book_Release_Date>
+        </Library_Book>
+        <Library_Book>
+            <Book_ID>6</Book_ID>
+            <Book_Author_ID>13</Book_Author_ID>
+            <Book_Title>Pride and Prejudice</Book_Title>
+            <Book_Edition>3</Book_Edition>
+            <Book_Release_Date>2001-04-01</Book_Release_Date>
+        </Library_Book>
+        <Library_Book>
+            <Book_ID>5</Book_ID>
+            <Book_Author_ID>74</Book_Author_ID>
+            <Book_Title>Frankenstein: The 1818 Text</Book_Title>
+            <Book_Edition>1</Book_Edition>
+            <Book_Release_Date>2010-08-10</Book_Release_Date>
+        </Library_Book>
+    </Books>
+
+    <Loans>
+        <Library_Loan>
+            <Loan_ID>1</Loan_ID>
+            <Loan_Student_ID>1</Loan_Student_ID>
+            <Loan_Book_ID>1</Loan_Book_ID>
+            <Loan_From>2023-01-05</Loan_From>
+            <Loan_To>2023-09-10</Loan_To>
+        </Library_Loan>
+        <Library_Loan>
+            <Loan_ID>2</Loan_ID>
+            <Loan_Student_ID>2</Loan_Student_ID>
+            <Loan_Book_ID>4</Loan_Book_ID>
+            <Loan_From>2023-01-15</Loan_From>
+            <Loan_To>2023-09-10</Loan_To>
+        </Library_Loan>
+        <Library_Loan>
+            <Loan_ID>3</Loan_ID>
+            <Loan_Student_ID>3</Loan_Student_ID>
+            <Loan_Book_ID>5</Loan_Book_ID>
+            <Loan_From>2023-02-16</Loan_From>
+            <Loan_To>2023-09-10</Loan_To>
+        </Library_Loan>
+    </Loans>
+</Library>
